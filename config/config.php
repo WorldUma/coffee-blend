@@ -1,12 +1,17 @@
 <?php
 
-define('DBHOST', 'localhost');
+// define('DBHOST', 'localhost');
 
-define('DBNAME', 'coffee-blend');
+// define('DBNAME', 'coffee-blend');
 
-define('DBUSER', 'root');
+// define('DBUSER', 'root');
 
-define('DBPASS', '');
+// define('DBPASS', '');
+define('DBHOST', getenv('DBHOST'));
+define('DBNAME', getenv('DBNAME'));
+define('DBUSER', getenv('DBUSER'));
+define('DBPASS', getenv('DBPASS'));
+
 
 
 try {
